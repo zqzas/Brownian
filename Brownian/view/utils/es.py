@@ -179,6 +179,13 @@ def getNodeInfo():
     nodes = Request(index="_nodes")._doRequest(operation="stats", verb="GET", search_opts="clear=true&os=true&fs=true")
     return nodes['nodes']
 
+#Note by zqzas:
+#   Call HTTP API of ElasticSearch
+#   |
+#   |   
+#   |
+#   V
+
 class Request(object):
     """A single request to ElasticSearch
     """
