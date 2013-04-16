@@ -181,10 +181,10 @@ def getNodeInfo():
 
 #Note by zqzas:
 #   Call HTTP API of ElasticSearch
-#   |
-#   |   
-#   |
-#   V
+#   ||
+#   ||   
+#   ||
+#   \/
 
 class Request(object):
     """A single request to ElasticSearch
