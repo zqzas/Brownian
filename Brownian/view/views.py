@@ -28,8 +28,10 @@ def query(request):
             indices = []
             return render(request, "home.html", data)
         request.session['indices'] = indices
-
+    
     data["health"]= utils.es.getHealth()
+    #Note by zqzas
+    #   Call ElasticSearch
     result = utils.es.indicesFromTime(time, indices)
     selectedIndices = ",".join(result)
     data["indices"] = selectedIndices
